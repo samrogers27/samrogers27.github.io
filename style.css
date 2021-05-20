@@ -79,3 +79,26 @@
 .bg-dark {
   background-color: #000000 !important;
 }
+
+.img-solid {
+  max-height: 350px;
+  width: auto;
+}
+
+@media (max-width: 992px) {
+  .img-solid {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .img-solid {
+    max-height: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  .img-solid {
+    max-height: 300px;
+  }
+}
