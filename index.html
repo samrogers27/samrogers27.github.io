@@ -22,7 +22,8 @@
 
   <link rel="stylesheet" href="https://use.typekit.net/nhd0gnx.css">
 
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500"
+    rel="stylesheet">
 
   <link href="style.css" rel="stylesheet">
 
@@ -33,10 +34,14 @@
 
 <body class="bg-dark">
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-dark pt-4 sticky-top mx-auto px-3"
+  <nav class="navbar navbar-expand navbar-light bg-dark pt-4 sticky-top mx-auto px-3"
     style="max-width: 1000px;">
-    <a class="navbar-brand" href="index.html">
+    <a class="navbar-brand d-none d-sm-block" href="index.html">
       <img src="Images/website_2021_logo.png" alt="Sam Rogers" height="40">
+    </a>
+
+    <a class="navbar-brand d-sm-none" href="index.html">
+      <img src="Images/website_2021_logo_small.png" alt="S.R." height="40">
     </a>
 
     <div style="flex:1;">
@@ -44,8 +49,12 @@
 
     <div class="" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item active">
+        <li class="nav-item active px-5">
           <a class="nav-link menu-link" href="index.html">Work
+          </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link menu-link" href="about.html">About
           </a>
         </li>
       </ul>
@@ -56,7 +65,17 @@
 
     <div class="row py-5">
 
-      <div class="col-12 col-md py-5">
+      <div class="col-12 col-sm-6 py-5">
+        <a href="grove.html" class="text-center" style="text-decoration: none">
+          <img class="mx-auto d-block img-solid pb-3" src="Images/grove_homePage.png"
+            alt="">
+          <h2 class="header-2">
+            Grove
+          </h2>
+        </a>
+      </div>
+
+      <div class="col-12 col-sm-6 py-5">
         <a href="loop.html" class="text-center" style="text-decoration: none">
           <img class="mx-auto d-block img-solid pb-3" src="Images/loop_homePage.png"
             alt="">
@@ -66,17 +85,7 @@
         </a>
       </div>
 
-      <div class="col-12 col-md py-5">
-        <a href="36minutesoftype.html" class="text-center" style="text-decoration: none">
-          <img class="mx-auto d-block img-solid pb-3"
-            src="Images/36MinutesOfType_igArtboard-1.png" alt="">
-          <h2 class="header-2">
-            36 Minutes of Type
-          </h2>
-        </a>
-      </div>
-
-      <div class="col-12 col-md py-5">
+      <div class="col-12 col-sm-6 py-5">
         <a href="calpolyracing.html" class="text-center" style="text-decoration: none">
           <img class="mx-auto d-block img-solid pb-3" src="Images/racing_homePage.png"
             alt="">
@@ -86,22 +95,32 @@
         </a>
       </div>
 
-      <div class="col-12 col-md py-5">
-        <a href="dew.html" class="text-center" style="text-decoration: none">
-          <img class="mx-auto d-block img-solid pb-3" src="Images/dew_homePage.png"
-            alt="">
+      <div class="col-12 col-sm-6 py-5">
+        <a href="36minutesoftype.html" class="text-center" style="text-decoration: none">
+          <img class="mx-auto d-block img-solid pb-3"
+            src="Images/36MinutesOfType_igArtboard-1.png" alt="">
           <h2 class="header-2">
-            Dew
+            36 Minutes of Type
           </h2>
         </a>
       </div>
 
-      <div class="col-12 col-md py-5">
+      <div class="col-12 col-sm-6 py-5">
         <a href="xvela.html" class="text-center" style="text-decoration: none">
           <img class="mx-auto d-block img-solid pb-3" src="Images/xvela_homePage.png"
             alt="">
           <h2 class="header-2">
             XVELA Icon Library
+          </h2>
+        </a>
+      </div>
+
+      <div class="col-12 col-sm-6 py-5">
+        <a href="dew.html" class="text-center" style="text-decoration: none">
+          <img class="mx-auto d-block img-solid pb-3" src="Images/dew_homePage.png"
+            alt="">
+          <h2 class="header-2">
+            Dew
           </h2>
         </a>
       </div>

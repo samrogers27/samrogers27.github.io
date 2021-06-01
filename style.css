@@ -76,6 +76,15 @@
   color: #B8B8B8 !important;
 }
 
+.link {
+  font-size: 17px !important;
+  font-family: "poppins", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  color: #43FF00 !important;
+  text-decoration: none;
+}
+
 .bg-dark {
   background-color: #000000 !important;
 }
@@ -101,4 +110,8 @@
   .img-solid {
     max-height: 300px;
   }
+}
+
+.sticky-top {
+  background-color: white;
 }
