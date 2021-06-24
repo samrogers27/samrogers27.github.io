@@ -45,7 +45,7 @@
 }
 
 .btn-primary {
-  background-color: #93FF50 !important;
+  background-color: #43FF00 !important;
   outline: none !important;
   box-shadow: none !important;
   font-family: "poppins", sans-serif !important;
@@ -57,7 +57,7 @@
 
 .btn-primary:hover {
   background-color: black !important;
-  color: #93FF50 !important;
+  color: #43FF00 !important;
 }
 
 .body-1 {
