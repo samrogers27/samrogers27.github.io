@@ -149,6 +149,16 @@
   text-decoration: none;
 }
 
+.project-link {
+  outline-style: none;
+}
+
+.project-link:hover {
+  outline-style: solid !important;
+  outline-color: #ffffff !important;
+  outline-width: medium !important;
+}
+
 .bg-dark {
   background-color: #000000 !important;
 }
