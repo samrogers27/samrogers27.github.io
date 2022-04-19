@@ -40,8 +40,8 @@
 <body class="bg-white d-flex justify-content-center">
   <div style="width: 90%; max-width: 1000px">
 
-    <div class="row pb-5 align-items-center">
-      <div class="col-12 col-sm-6 pe-5">
+    <div class="row pb-3 pb-sm-5 align-items-center">
+      <div class="col-12 col-sm-6 pe-5 pt-5 order-2 order-sm-1">
         <p class="body-2" style="color: #0055B8;"> Representing the world of maritime
           shipping </p>
         <h1 class="header-1">XVELA Icon Library</h1>
@@ -49,7 +49,7 @@
           cloud-based collaborative tools for the maritime shipping industry.</p>
       </div>
 
-      <div class="col-12 col-sm-6">
+      <div class="col-12 col-sm-6 order-1 order-sm-2">
         <img src="Images/xvela/website_2022_xvela_hero.png"
           alt="A collection of XVELA icons arranged in a pile over a blue background."
           class="img-fluid">
@@ -59,15 +59,21 @@
     <div class="border mt-3">
     </div>
 
-    <div class="row pt-4 pb-2">
-      <div class="col-12 col-sm-6">
-        <h4 class="header-4">Skills</h4>
-        <p class="body-2">Illustration</p>
-        <p class="body-2">Iconography</p>
+    <div class="row pt-4 pb-3 gy-3">
+      <div class="col-1 d-none d-sm-block">
       </div>
-      <div class="col-12 col-sm-6">
-        <h4 class="header-4">Tools</h4>
-        <p class="body-2">Adobe Illustrator</p>
+      <div class="col-12 col-sm-5 d-flex">
+        <h4 class="header-4" style="width:75px">Skills</h4>
+        <div>
+          <p class="body-2" style="margin-bottom:8px">Illustration</p>
+          <p class="body-2" style="margin-bottom:8px">Iconography</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 d-flex">
+        <h4 class="header-4" style="width:75px">Tools</h4>
+        <div>
+          <p class="body-2" style="margin-bottom:8px">Adobe Illustrator</p>
+        </div>
       </div>
     </div>
 
@@ -81,33 +87,58 @@
           class="img-fluid">
       </div>
 
-      <div class="col-12 col-sm-6 ps-5">
+      <div class="col-12 col-sm-6 ps-5 pt-5 pt-sm-0">
         <p class="body-3">XVELA needed custom icons to illustrate complex shipping and
           software processes and add more personality to the brand.</p>
       </div>
     </div>
 
     <div class="row py-5">
-      <div class="col-2 col-sm-3">
+      <div class="col-3">
         <img src="Images/xvela/website_2022_xvela_gifs_pineapplePhoto.png"
-          alt="A pineapple." class="img-fluid">
+          alt="A pineapple." class="img-fluid" id="animated-image-1">
       </div>
-      <div class="col-2 col-sm-3">
+      <div class="col-3">
         <img src="Images/xvela/website_2022_xvela_gifs_hatIcon.png"
-          alt="An icon of a sailor’s hat." class="img-fluid">
+          alt="An icon of a sailor’s hat." class="img-fluid" id="animated-image-2">
       </div>
-      <div class="col-2 col-sm-3">
+      <div class="col-3">
         <img src="Images/xvela/website_2022_xvela_gifs_BinocularsPhoto.png"
-          alt="A pair of binoculars." class="img-fluid">
+          alt="A pair of binoculars." class="img-fluid" id="animated-image-3">
       </div>
-      <div class="col-2 col-sm-3">
+      <div class="col-3">
         <img src="Images/xvela/website_2022_xvela_gifs_wheelIcon.png"
-          alt="An icon of a ship’s steering wheel." class="img-fluid">
+          alt="An icon of a ship’s steering wheel." class="img-fluid"
+          id="animated-image-4">
       </div>
     </div>
 
+    <script type="text/javascript">
+      var state = 1;
+      var image1 = document.getElementById("animated-image-1")
+      var image2 = document.getElementById("animated-image-2")
+      var image3 = document.getElementById("animated-image-3")
+      var image4 = document.getElementById("animated-image-4")
+
+      function changeState() {
+        if (state % 2 === 0) {
+          image1.src = "Images/xvela/website_2022_xvela_gifs_pineapplePhoto.png"
+          image2.src = "Images/xvela/website_2022_xvela_gifs_hatIcon.png"
+          image3.src = "Images/xvela/website_2022_xvela_gifs_BinocularsPhoto.png"
+          image4.src = "Images/xvela/website_2022_xvela_gifs_wheelIcon.png"
+        } else if (state % 2 === 1) {
+          image1.src = "Images/xvela/website_2022_xvela_gifs_pineappleIcon.png"
+          image2.src = "Images/xvela/website_2022_xvela_gifs_hatPhoto.png"
+          image3.src = "Images/xvela/website_2022_xvela_gifs_binocularsIcon.png"
+          image4.src = "Images/xvela/website_2022_xvela_gifs_wheelPhoto.png"
+        }
+        state += 1
+      }
+      setInterval(changeState, [1250]);
+    </script>
+
     <div class="row py-4">
-      <div class="col-12 col-sm-6">
+      <div class="col-12 col-sm-6 pb-4 pb-sm-0">
         <img src="Images/xvela/website_2022_xvela_website.png"
           alt="A computer displaying the icons alongside value propositions on XVELA’s website."
           class="img-fluid">
@@ -119,7 +150,7 @@
       </div>
     </div>
 
-    <div class="py-5 mx-auto" style="max-width: 65%;">
+    <div class="py-3 py-sm-5 mx-auto" style="max-width: 65%;">
       <p class="body-3">The linear style of the icons evokes style of XVELA’s logotype and
         fits
         seamlessly within their existing identity.</p>
@@ -131,7 +162,7 @@
         class="img-fluid" style="width: 100%;">
     </div>
 
-    <div class="py-5 mx-auto" style="max-width: 65%;">
+    <div class="py-3 py-sm-5 mx-auto" style="max-width: 65%;">
       <p class="body-3">The icons represent XVELA’s
         values of
         collaboration, security, and
@@ -163,25 +194,25 @@
 
       <div class="row pt-3">
 
-        <div class="project-link col-12 col-sm-4 mx-auto">
+        <div class="col-12 col-sm-4 mx-auto">
           <a href="36minutesoftype.html">
-            <img class="img-fluid"
+            <img class="img-fluid w-100"
               src="Images/homePage/website_2022_homePage_thumbnails36mot.png"
               alt="Sketches of the letters A through I arranged in a 3 by 3 square.">
           </a>
         </div>
 
-        <div class="project-link col-12 col-sm-4 mx-auto">
+        <div class="col-12 col-sm-4 mx-auto py-4 py-sm-0">
           <a href="grove.html">
-            <img class="img-fluid"
+            <img class="img-fluid w-100"
               src="Images/homePage/website_2022_homePage_thumbnailsGrove.png"
               alt="The Grove logo over a yellow background.">
           </a>
         </div>
 
-        <div class="project-link col-12 col-sm-4 mx-auto">
+        <div class="col-12 col-sm-4 mx-auto">
           <a href="loop.html">
-            <img class="img-fluid"
+            <img class="img-fluid w-100"
               src="Images/homePage/website_2022_homePage_thumbnailsLoop.png"
               alt="The Loop logo over and off-white background.">
           </a>
