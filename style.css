@@ -85,6 +85,42 @@
   line-height: 30px !important;
 }
 
+.inline-link-1 {
+  font-size: 17px !important;
+  font-family: "poppins", sans-serif !important;
+  font-weight: 500 !important;
+  font-style: normal;
+  color: black;
+  text-decoration: underline 2px;
+}
+
+.inline-link-1:hover {
+  font-size: 17px !important;
+  font-family: "poppins", sans-serif !important;
+  font-weight: 500 !important;
+  font-style: italic;
+  color: black;
+  text-decoration: underline 2px;
+}
+
+.inline-link-2 {
+  font-size: 20px !important;
+  font-family: "poppins", sans-serif !important;
+  font-weight: 500 !important;
+  font-style: normal;
+  color: black;
+  text-decoration: underline 2px;
+}
+
+.inline-link-2:hover {
+  font-size: 20px !important;
+  font-family: "poppins", sans-serif !important;
+  font-weight: 500 !important;
+  font-style: italic;
+  color: black;
+  text-decoration: underline 2px;
+}
+
 .folio {
   font-size: 11px !important;
   font-family: "poppins", sans-serif !important;
