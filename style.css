@@ -208,3 +208,10 @@
   background-color: white;
   opacity: 1;
 }
+
+@media (max-width: 991.98px) {
+    .medium-center {
+        margin-bottom: -104px !important;
+        text-align: center !important;
+    }
+}
