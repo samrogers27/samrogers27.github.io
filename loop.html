@@ -152,21 +152,43 @@
     </div>
 
 
-    <div class="border mb-5">
+    <div class="border">
     </div>
     <!--Skills/Tools Section End-->
 
 
     <!--2 Col Content Section Start-->
-    <div class="row pt-4 pb-5 align-items-center">
+    <div class="row pt-full align-items-center">
 
+      <!--Animation Section Start-->
       <div class="col-12 col-sm-6">
 
         <img src="Images/loop/website_2022_loop_onboardingWelcome.png"
           alt="Phone screens showing the Loop onboarding process: a welcome page, a page where someone can select their environmental interests, and a page where they can enter their location."
-          class="img-fluid">
+          class="img-fluid" id="animated-image-1">
 
       </div>
+      <!--Animation Section End-->
+
+
+      <!--Script Section Start-->
+      <script type="text/javascript">
+        var state = 1;
+        var image1 = document.getElementById("animated-image-1")
+
+        function changeState() {
+          if (state % 3 === 0) {
+            image1.src = "Images/loop/website_2022_loop_onboardingWelcome.png"
+          } else if (state % 3 === 1) {
+            image1.src = "Images/loop/website_2022_loop_onboardingInterests.png"
+          } else if (state % 3 === 2) {
+            image1.src = "Images/loop/website_2022_loop_onboardingLocation.png"
+          }
+          state += 1
+        }
+        setInterval(changeState, [1600]);
+      </script>
+      <!--Script Section End-->
 
 
       <div class="col-12 col-sm-6 padded-left-text pt-5 pt-sm-0">
@@ -182,30 +204,29 @@
           tasks to make forming environmentally-friendly habits approachable and
           rewarding.</p>
 
-        <div class="pt-3">
+        <div class="pt-3 d-none d-md-inline">
 
           <a href="https://xd.adobe.com/view/f500c152-b354-42ca-6348-d1e9e5b4a432-8331/screen/a75fa9bb-e5a5-4b0d-84f5-b93656a1ab94/iPhone-X-XS-4/"
-            class="button border my-3 px-4 py-2 d-none d-md-inline" target="_blank">
+            class="button border my-3 px-4 py-2" target="_blank">
             Try The Prototype</a>
 
         </div>
 
       </div>
 
-      <div class="col-12 d-flex justify-content-center d-md-none pt-5">
+      <div class="col-12 d-flex justify-content-center d-md-none pt-partial">
         <a href="https://xd.adobe.com/view/f500c152-b354-42ca-6348-d1e9e5b4a432-8331/screen/a75fa9bb-e5a5-4b0d-84f5-b93656a1ab94/iPhone-X-XS-4/"
           class="button border my-3 px-4 py-2" target="_blank">Try The Prototype</a>
       </div>
 
       <div class="pe-5"></div>
 
-
     </div>
     <!--2 Col Content Section End-->
 
 
     <!--Image Section Start-->
-    <div class="pt-4 pb-3">
+    <div class="pt-full">
 
       <img src="Images/loop/website_2022_loop_tasks.png"
         alt="Phone screens showing a task to go dairy-free for a day and a user’s progress on their profile."
@@ -216,7 +237,7 @@
 
 
     <!--Text Section Start-->
-    <div class="py-3 py-sm-5 mx-auto padded-text">
+    <div class="pt-full mx-auto padded-text">
       <p class="body-3">Customizing small,
         digestible steps based on what someone is
         interested in leads them to feel more fulfilled by and invested in their
@@ -229,7 +250,7 @@
 
 
     <!--2 Col Content Section Start-->
-    <div class="row pt-4 pb-5 align-items-center">
+    <div class="row pt-full align-items-center">
 
       <div class="col-12 col-sm-6">
 
@@ -240,7 +261,7 @@
       </div>
 
 
-      <div class="col-12 col-sm-6 padded-left-text pt-5 pt-sm-0">
+      <div class="col-12 col-sm-6 padded-left-text pt-full pt-sm-0">
 
         <p class="body-3">
           Incorporating community events connects people to the
@@ -255,12 +276,12 @@
 
 
     <!--4 Col Content Section Start-->
-    <div class="row py-3">
+    <div class="row pt-full">
 
       <div class="col-6 col-sm-3">
 
         <img src="Images/loop/website_2022_loop_illustrations_sprout.png"
-          class="img-fluid pt-4"
+          class="img-fluid"
           alt="A cartoon illustration of a plant sprout surrounded by green, red, and yellow dots.">
 
       </div>
@@ -268,8 +289,7 @@
 
       <div class="col-6 col-sm-3">
 
-        <img src="Images/loop/website_2022_loop_illustrations_milk.png"
-          class="img-fluid pt-4"
+        <img src="Images/loop/website_2022_loop_illustrations_milk.png" class="img-fluid"
           alt="A cartoon illustration of a milk jug and a glass of milk.">
 
       </div>
@@ -277,8 +297,7 @@
 
       <div class="col-6 col-sm-3">
 
-        <img src="Images/loop/website_2022_loop_illustrations_tv.png"
-          class="img-fluid py-4"
+        <img src="Images/loop/website_2022_loop_illustrations_tv.png" class="img-fluid"
           alt="A cartoon illustration of a television with antennas and knobs.">
 
       </div>
@@ -286,8 +305,7 @@
 
       <div class="col-6 col-sm-3">
 
-        <img src="Images/loop/website_2022_loop_illustrations_city.png"
-          class="img-fluid py-4"
+        <img src="Images/loop/website_2022_loop_illustrations_city.png" class="img-fluid"
           alt="A cartoon illustration of three skyscraper buildings with clouds above them.">
 
       </div>
@@ -298,7 +316,7 @@
 
 
     <!--Text Section Start-->
-    <div class="py-3 py-sm-5 mx-auto padded-text">
+    <div class="pt-full mx-auto padded-text">
 
       <p class="body-3">
         A colorful interface and playful illustrations keep the tone
@@ -310,7 +328,7 @@
 
 
     <!--2 Col Content Section Start-->
-    <div class="row pt-4 pb-5 align-items-center">
+    <div class="row pt-full align-items-center">
 
       <div class="col-12 col-sm-6">
 
@@ -334,7 +352,7 @@
 
 
     <!--2 Col Content Section Start-->
-    <div class="row pt-4 pb-5 align-items-center">
+    <div class="row pt-full align-items-center">
 
       <div class="col-12 col-sm-6 ps-5 pe-5 pt-5 pt-sm-0 order-2 order-sm-1">
 
@@ -358,7 +376,7 @@
 
 
     <!--2 Col Content Section Start-->
-    <div class="row pt-4 pb-5 align-items-center">
+    <div class="row pt-full align-items-center">
 
       <div class="col-12 col-sm-6">
 
@@ -382,11 +400,10 @@
 
 
     <!--More Projects Section Start-->
-    <div class="border mt-5">
-    </div>
+    <div class="border mt-5"></div>
 
 
-    <div class="py-5 mt-3" color="#ffffff">
+    <div class="pt-full" color="#ffffff">
 
       <h2 class="header-2 text-center pb-4">
         Looking for more?
@@ -496,7 +513,7 @@
 
 
     <!--CTA Section Start-->
-    <div class="border mt-3">
+    <div class="border mt-5">
     </div>
 
 
