@@ -288,6 +288,39 @@
     <!--2 Col Content Section End-->
 
 
+    <!--Animation Section Start-->
+    <div class="col-12 py-5">
+
+      <img src="Images/grove/website_2022_grove_website_home.png"
+        alt="An iMac computer showing different pages of the Grove website."
+        class="img-fluid" id="animated-image-1">
+
+    </div>
+    <!--Animation Section End-->
+
+
+    <!--Script Section Start-->
+    <script type="text/javascript">
+      var state = 1;
+      var image1 = document.getElementById("animated-image-1")
+
+      function changeState() {
+        if (state % 4 === 0) {
+          image1.src = "Images/grove/website_2022_grove_website_home.png"
+        } else if (state % 4 === 1) {
+          image1.src = "Images/grove/website_2022_grove_website_homeContent.png"
+        } else if (state % 4 === 2) {
+          image1.src = "Images/grove/website_2022_grove_website_features.png"
+        } else if (state % 4 === 3) {
+          image1.src = "Images/grove/website_2022_grove_website_featuresContent.png"
+        }
+        state += 1
+      }
+      setInterval(changeState, [1400]);
+    </script>
+    <!--Script Section End-->
+
+
     <!--Text Section Start-->
     <div class="py-3 py-sm-5 mx-auto" style="max-width: 65%;">
 
