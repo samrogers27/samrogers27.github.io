@@ -210,8 +210,29 @@
 }
 
 @media (max-width: 991.98px) {
-    .medium-center {
-        margin-bottom: -104px !important;
-        text-align: center !important;
-    }
+  .medium-center {
+    margin-bottom: -104px !important;
+    text-align: center !important;
+  }
+}
+
+.padded-text {
+  max-width: 65%;
+}
+
+.padded-left-text {
+  padding-left: 48px;
+}
+
+@media (max-width: 767.98px) {
+  .padded-text {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .padded-left-text {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 }
